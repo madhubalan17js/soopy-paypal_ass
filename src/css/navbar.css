@@ -1,0 +1,54 @@
+.nav-link {
+  color: rgba(255, 255, 255, 0.945) !important;
+}
+
+.nav-link:hover,
+.active {
+  background-color: rgba(184, 199, 219, 0.244) !important;
+  transform: scale(1.1);
+  border-radius: 25px;
+  color: rgb(202, 202, 192) !important;
+}
+
+@media only screen and (max-width: 990px) {
+  .nav-link:hover,
+  .active {
+    background-color: transparent !important;
+    transform: scale(1);
+  }
+}
+
+/* Search input  */
+
+.search {
+  flex: 3;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #ced4da;
+
+  border-left: none !important;
+}
+
+.input-group input:focus {
+  outline: none; /* Removes the default focus outline */
+  border-color: none; /* Sets a custom border color */
+  box-shadow: none;
+}
+
+.searchlogo {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #1c1d1e;
+  text-align: center;
+  white-space: nowrap;
+
+  border: 1px solid #ced4da;
+  border-right: none !important;
+  border-radius: 25px;
+}
+
+.activef {
+  background-color: aquamarine !important;
+}
