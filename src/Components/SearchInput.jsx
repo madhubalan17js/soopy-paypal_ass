@@ -4,8 +4,8 @@ import { AiOutlineDownload } from "react-icons/ai"
 import "../css/navbar.css"
 const SearchInput = ({ Search }) => {
   return (
-    <div className="d-flex align-items-center mx-5">
-      <div className="input-group mt-3 px-5 d-flex flex-nowrap">
+    <div className="d-flex  align-items-center justify-content-around ">
+      <div className="input-group mt-3 d-flex flex-nowrap">
         <span className="searchlogo" id="basic-addon1">
           {Search}
         </span>
@@ -17,18 +17,20 @@ const SearchInput = ({ Search }) => {
           aria-describedby="basic-addon1"
         />
       </div>
-      <a href="#!">
-        <AiOutlineDownload
-          color="blue"
-          fontSize="38px"
-          style={{
-            backgroundColor: "ced4da",
-            padding: "5px",
-            borderRadius: "50%",
-            marginTop: "10px",
-          }}
-        />
-      </a>
+      <div className="col-2">
+        <a href="#!">
+          <AiOutlineDownload
+            color="blue"
+            fontSize="38px"
+            style={{
+              backgroundColor: "ced4da",
+              padding: "5px",
+              borderRadius: "50%",
+              marginTop: "10px",
+            }}
+          />
+        </a>
+      </div>
     </div>
   )
 }

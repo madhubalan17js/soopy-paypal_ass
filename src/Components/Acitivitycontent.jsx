@@ -52,7 +52,7 @@ const Acitivitycontent = ({ payMenrHistory, filterTypebtn }) => {
 
   return (
     <div>
-      <div className="mt-3 px-5 mx-5">
+      <div className="mt-3 px-3 mx-3">
         <h6 className="fw-bold">Filter by</h6>
         <div className="d-flex flex-nowrap">
           {filterTypebtn.map((btnname, ind) => (
@@ -74,10 +74,10 @@ const Acitivitycontent = ({ payMenrHistory, filterTypebtn }) => {
           <small className="text-muted">This week</small>
           {data.map((list, ind) => (
             <div
-              className="card mb-3 mt-2 d-flex flex-row align-items-center justify-content-between"
+              className="card mb-3 mt-2 d-flex flex-nowrap flex-row align-items-center justify-content-between"
               key={ind}
             >
-              <div className="d-flex  p-2">
+              <div className="d-flex col-7  p-2">
                 <img
                   src={list.Image}
                   className="rounded-circle"
@@ -94,7 +94,7 @@ const Acitivitycontent = ({ payMenrHistory, filterTypebtn }) => {
                   </div>
                 </div>
               </div>
-              <div className="p-2">
+              <div className="p-2 col-3">
                 <h4>{list.amount}</h4>
               </div>
             </div>

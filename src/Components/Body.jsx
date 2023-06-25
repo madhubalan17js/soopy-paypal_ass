@@ -1,6 +1,7 @@
 import React from "react"
 
-const Body = (props, { container }) => {
+const Body = (props) => {
+  const { container } = props
   return <div className={container}>{props.children}</div>
 }
 
